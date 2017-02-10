@@ -40,7 +40,7 @@ public class FTPUtil {
 		if (!currentDir.equals("")) {
 			dirToList += "/" + currentDir;
 		}
-/*test*/
+
 		FTPFile[] subFiles = ftpClient.listFiles(dirToList);
 
 		if (subFiles != null && subFiles.length > 0) { 
