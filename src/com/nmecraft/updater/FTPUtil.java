@@ -10,7 +10,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-
 import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPFile;
@@ -79,9 +78,10 @@ public class FTPUtil {
 				} else {
 					// download the file
 					boolean success = downloadSingleFile(ftpClient, filePath,
-							newDirPath);
+							newDirPath);                                        
 					if (success) {
 						System.out.println("DOWNLOADED the file: " + filePath);
+                                                
 					} else {
 						System.out.println("COULD NOT download the file: "
 								+ filePath);
